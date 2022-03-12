@@ -10,8 +10,8 @@ console.log(something); //null
 
 const bool = false;
 
-let und;
-console.log(und); //undefined
+let emptyVariable;
+console.log(emptyVariable); //undefined
 
 const obj = {
   name: "Alex",
