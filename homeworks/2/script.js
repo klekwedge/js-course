@@ -13,9 +13,9 @@ for (let i = 0; i < 2; i++) {
   const lastFilm = prompt("Один из последних просмотренных фильмов?", "");
   const lastFilmRating = prompt("На сколько оцените его?", "");
   if (
-    lastFilm.length === "" ||
+    lastFilm === "" ||
     lastFilm.length > 50 ||
-    lastFilmRating.length === "" ||
+    lastFilmRating === "" ||
     lastFilmRating.length > 50 ||
     lastFilm === null ||
     lastFilmRating === null

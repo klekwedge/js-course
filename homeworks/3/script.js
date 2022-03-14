@@ -27,9 +27,9 @@ function rememberMyFilms() {
     const lastFilm = prompt("Один из последних просмотренных фильмов?", "");
     const lastFilmRating = prompt("На сколько оцените его?", "");
     if (
-      lastFilm.length === "" ||
+      lastFilm === "" ||
       lastFilm.length > 50 ||
-      lastFilmRating.length === "" ||
+      lastFilmRating === "" ||
       lastFilmRating.length > 50 ||
       lastFilm === null ||
       lastFilmRating === null
@@ -68,7 +68,7 @@ showMyDB(personalMovieDB);
 function writeYourGenres() {
   for (let i = 1; i < 4; i++) {
     const favouriteGenre = prompt(`Ваш любимый жанр под номером ${i}`, "");
-    if (favouriteGenre.length === "" || favouriteGenre === null) {
+    if (favouriteGenre === "" || favouriteGenre === null) {
       i--;
       continue;
     }
